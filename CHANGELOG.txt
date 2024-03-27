@@ -1,0 +1,80 @@
+To-Do:
+    - Possibly improve bike graphics
+    - Reorganize methods and absolutes
+    - Add fullscreen toggle
+
+version 2.9:
+    - Moved changelog to CHANGELOG.txt
+
+version 2.8:
+    - Added padding against missing sound and graphics files:
+        - Added DummySound object with \a escape sequence and debug info
+        - Added MUSIC_LOADED permanent status variable
+    - Reorganized absolutes for easy configuration
+    - Changed mode text to hold sides
+
+version 2.7:
+    - Changed PATH to read folder separator from os, so cross-platform
+
+version 2.6:
+    - Fullscreen enabled
+
+version 2.5:
+    - Added text centering method to Game
+    - Added WINNER_TEXTS dictionary, keyed by matching winning status
+
+version 2.4:
+    - Updated code doc
+    - Added icon
+    - Moved text positions to absolutes
+    - Moved mode text list to absolutes
+
+version 2.3 beta:
+    - Added Escape key as exit method
+    - Fixed double keypress bug
+
+version 2.2 beta:
+    - Added ability to select round type (Hallelujah!)
+	- Fixed not showing final move bug
+	- Removed unneeded import of random module
+
+version 2.1 beta:
+    - Changed check_death to check_status
+    - Changed bike status to a live property
+    - Updated in code doc
+
+version 2 beta:
+    - Added ComputerBike, Praise the LORD!
+    - Added Bike abstract class
+    - Changed some common operations to methods in Bike classes
+
+version 1.3:
+    - Changed bike start sound play call to mainloop
+    - Changed bike running sound play call to start of actual game, not 1 second before
+
+version 1.2
+    - Changed some texts to black on background color
+
+version 1.1
+    - Increased winner declaration delay
+    - Added pygame event clearing at winner declaration to avoid accidental declaration skipping
+
+version 1.0
+    - Added smoothing of corners at turns
+    - Added turn radius constant
+    - Added short delay between game end and win announce
+    - Implemented sound and music
+    - Added layman doc
+    - Added PATH access to get to data files if run elsewhere
+
+version 0.2 Alpha
+    - Added comments/code doc
+    - Made walls thicker
+    - Moved game end check from draw_step method to main loop
+    - Moved countdown_to_start call from wait_for_start method to main loop
+    - Added COUNTDOWN_TIME constant
+    - Added BIKE_RIM_COLOR constant and changed to THECOLORS["darkgrey"]
+
+version 0.1 Alpha
+    - Initial basic working release
+"""
